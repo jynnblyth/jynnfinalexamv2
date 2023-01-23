@@ -19,12 +19,11 @@ Created by Jynn Blyth M. Nicolas
     <link href="./assets/style.css" rel="stylesheet" />
   </head>
   <body>
-    <audio src="music.mp3" allow="autoplay" id="music" hidden ></audio>
-    <!-- <iframe src="music.mp3" allow="autoplay" id="music" style="display: none;"></iframe> -->
-    <audio id="music" autoplay>
-        <source src="music.mp3" type="music/mp3">
-        <source src="music.mp3" type="music/mp3">
-    </audio>
+    <script type="music">
+    function autoplay(){
+     document.getElementById(“music”).play();
+    }
+    </script>
     
     <div class="notification-container">
       <div class="notification-desktop">
