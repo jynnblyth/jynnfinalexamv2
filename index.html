@@ -19,11 +19,13 @@ Created by Jynn Blyth M. Nicolas
     <link href="./assets/style.css" rel="stylesheet" />
   </head>
   <body>
-    <audio>
-   <a-entity id="music" geometry="primitive: plane"  
-      sound="src: url(music.mp3); autoplay: true">
-    </a-entity>
-    </audio>
+    <a-scene>
+  
+    <audio id="music" src="music.mp3" preload="auto"></audio>
+
+  <a-entity sound="src: #music"></a-entity>
+</a-scene>
+    
     <div class="notification-container">
       <div class="notification-desktop">
         <p>This is the default room. If any mobile user joins, your will lose control and this app will mirror that mobile user's screen.
