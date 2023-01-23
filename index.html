@@ -11,7 +11,6 @@ Created by Jynn Blyth M. Nicolas
     <script src="./assets/runner.js"></script>
     <script src="./assets/audio.js"></script>
     <script src="./assets/sound.js"></script>
-    <script src="./music.mp3"></script>
     <script src="https://cdn.jsdelivr.net/gh/alvinwan/aframe-low-poly@0.0.2/dist/aframe-low-poly.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
     <script src="http://mirrorvr.alvinwan.com/mirrorvr.js"></script>
@@ -21,7 +20,7 @@ Created by Jynn Blyth M. Nicolas
   </head>
   <body>
     
-   <audio controls autoplay muted>
+   <audio controls autoplay>
   <source src="music.mp3" type="audio/mpeg">
 </audio>
     
@@ -32,9 +31,9 @@ Created by Jynn Blyth M. Nicolas
           <a onClick="hideWarning();" class="notification-close"><i class="fas fa-times"></i></a></p>
       </div>
     </div>
-    <a-scene fog="type: linear; color: #778786; near:5; far:20">
+    <a-scene fog="type: linear; color: #280137; near:5; far:20">
     
-    <a-sky color="#778786"></a-sky>
+    <a-sky color="#280137"></a-sky>
       
        <!-- Mixins -->
       <a-assets>
