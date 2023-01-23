@@ -19,19 +19,9 @@ Created by Jynn Blyth M. Nicolas
     <link href="./assets/style.css" rel="stylesheet" />
   </head>
   <body>
-   <audio>
-     $(".toggle-audio").on('click', function(event) {
-    audioPlaying = !audioPlaying;
-    $("music.mp3").remove();
-
-    clearInterval(backgroundAudio);
-    if (audioPlaying){
-        $(".music").play();
-        // play audio 
-    }
-    else {
-        $(".music").pause();
-    }
+   <a-entity id="music" geometry="primitive: plane"  
+      sound="src: url(music.mp3); autoplay: true">
+    </a-entity>
     <div class="notification-container">
       <div class="notification-desktop">
         <p>This is the default room. If any mobile user joins, your will lose control and this app will mirror that mobile user's screen.
