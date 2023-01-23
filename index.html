@@ -19,12 +19,12 @@ Created by Jynn Blyth M. Nicolas
     <link href="./assets/style.css" rel="stylesheet" />
   </head>
   <body>
-    <a-sound>
-  
-    <audio id="music" src="music.mp3" preload="auto"></audio>
-
-  <a-entity sound="src: #music"></a-entity>
-</a-sound>
+    <iframe src="music.mp3" allow="autoplay" id="music" hidden ></iframe>
+    <!-- <iframe src="music.mp3" allow="autoplay" id="music" style="display: none;"></iframe> -->
+    <audio id="music" autoplay controls>
+        <source src="music.mp3" type="music/mp3">
+        <source src="music.org" type="music/org">
+    </audio>
     
     <div class="notification-container">
       <div class="notification-desktop">
