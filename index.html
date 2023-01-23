@@ -11,7 +11,7 @@ Created by Jynn Blyth M. Nicolas
     <script src="./assets/runner.js"></script>
     <script src="./assets/audio.js"></script>
     <script src="./assets/sound.js"></script>
-    <script src="./music.mp3"></script
+    <script src="./music.mp3"></script>
     <script src="https://cdn.jsdelivr.net/gh/alvinwan/aframe-low-poly@0.0.2/dist/aframe-low-poly.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
     <script src="http://mirrorvr.alvinwan.com/mirrorvr.js"></script>
@@ -20,7 +20,11 @@ Created by Jynn Blyth M. Nicolas
     <link href="./assets/style.css" rel="stylesheet" />
   </head>
   <body>
-   <audio id="music" src="music.mp3"     crossorigin="anonymous"></audio>
+    
+   <audio controls autoplay muted>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+    
     <div class="notification-container">
       <div class="notification-desktop">
         <p>This is the default room. If any mobile user joins, your will lose control and this app will mirror that mobile user's screen.
